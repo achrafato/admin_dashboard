@@ -1,0 +1,83 @@
+// handle view
+.tableui{
+    /********** handle view ************/
+    .container{
+        margin:auto;
+        padding: 0px 15px;
+    }
+
+    /*Small devices */
+    @media (min-width: 576px){
+    .container{
+        width:540px;
+    }
+    }
+    
+    
+    /*Medium  ---> tablets*/
+    @media (min-width: 768px){
+        .container{
+        width:720px;
+        }
+    }
+    
+    /*DEsktops*/
+    
+    @media (min-width: 992px){
+        .container{
+        width:960px;
+        }
+    }
+    
+    /*Large Screens*/
+    
+    @media (min-width: 1200px){   /*    It mean minimum width value 12000 or above     */
+        .container{
+        width:1140px;
+        }
+    }
+    /********** handle view ************/
+}
+
+
+.tableui{
+    margin-top: 20px;
+
+    .container{
+        box-shadow: 2px 4px 10px 1px rgb(201 201 201 / 47%);
+        padding: 20px;
+
+
+        .product_cell{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+    
+                .product_pic{
+                    width:40px;
+                    height:40px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    margin-right:10px
+                }
+        }
+    
+        .status_cell.Approved span{
+            background: #cff3cffc;
+            color: green;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    
+        .status_cell.Pending span{
+            background: rgb(243 207 207 / 99%);
+            color: red;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    }
+
+
+
+}

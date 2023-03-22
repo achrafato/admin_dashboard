@@ -1,0 +1,132 @@
+// handle view
+.dataTable{
+    /********** handle view ************/
+    .container{
+        margin:auto;
+        padding: 0px 15px;
+    }
+
+    /*Small devices */
+    @media (min-width: 576px){
+    .container{
+        width:540px;
+    }
+    }
+    
+    
+    /*Medium  ---> tablets*/
+    @media (min-width: 768px){
+        .container{
+        width:720px;
+        }
+    }
+    
+    /*DEsktops*/
+    
+    @media (min-width: 992px){
+        .container{
+        width:960px;
+        }
+    }
+    
+    /*Large Screens*/
+    
+    @media (min-width: 1200px){   /*    It mean minimum width value 12000 or above     */
+        .container{
+        width:1140px;
+        }
+    }
+    /********** handle view ************/
+}
+
+
+.dataTable{
+
+    padding:20px;
+    height: 100vh;
+
+    .container{
+
+
+        .tableContainer{
+            color:inherit !important;
+        }
+
+
+        .cellWithImg{
+
+            display: flex;
+            align-items: center;
+            gap:10px;
+
+            .cellImg{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+        }
+        
+        .cellWithStatus.active{
+            background: rgba(207, 243, 207, 0.9882352941);
+            color: green;
+            padding: 5px;
+            border-radius: 5px;
+            width: 63px;
+            text-align: center;
+        }
+        .cellWithStatus.pending{
+            background: rgba(243, 207, 207, 0.99);
+            color: red;
+            padding: 5px;
+            border-radius: 5px;
+            width: 63px;
+            text-align: center;
+        }
+        .cellWithStatus.passive{
+            background: rgb(255 239 192 / 99%);
+            color: orange;
+            padding: 5px;
+            border-radius: 5px;
+            width: 63px;
+            text-align: center;
+        }
+
+        .cellAction{
+            display: flex;
+            align-items: center;
+            gap:10px;
+
+            .viewButton{
+                padding: 5px;
+                border: 1px solid #0066ff;
+                border-radius: 5px;
+                cursor: pointer;
+                color: #0066ff;
+                transition: 0.3s;
+
+                &:hover{
+                    background-color: #0066ff;
+                    color: white;
+                }
+            }
+
+            .deleteButton{
+                padding: 5px;
+                border: 1px solid #ff001c;
+                border-radius: 5px;
+                cursor: pointer;
+                color: #ff001c;
+                transition: 0.3s;
+
+                &:hover{
+                    background-color: #ff001c;
+                    color: white;
+                }
+            }
+        }
+
+
+    }
+}

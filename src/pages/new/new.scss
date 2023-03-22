@@ -1,0 +1,187 @@
+// handle view
+.new{
+    /********** handle view ************/
+    .container{
+        margin:auto;
+        padding: 0px 15px;
+    }
+
+    /*Small devices */
+    @media (min-width: 576px){
+    .container{
+        width:540px;
+    }
+    }
+    
+    
+    /*Medium  ---> tablets*/
+    @media (min-width: 768px){
+        .container{
+        width:720px;
+        }
+    }
+    
+    /*DEsktops*/
+    
+    @media (min-width: 992px){
+        .container{
+        width:960px;
+        }
+    }
+    
+    /*Large Screens*/
+    
+    @media (min-width: 1200px){   /*    It mean minimum width value 12000 or above     */
+        .container{
+        width:1140px;
+        }
+    }
+    /********** handle view ************/
+}
+
+
+
+.new{
+    .container{
+
+        &.expand{
+
+            margin-left: 225px;
+            padding-left: 20px;
+            width:900px;
+
+            .nav{
+                .container{
+                    width:900px
+                }
+            }
+
+        }
+
+        .page_new{
+
+
+
+            padding: 10px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height: 100vh;
+
+            >.top{
+                text-transform: capitalize;
+                padding: 10px;
+                box-shadow: 2px 4px 10px 1px rgb(201 201 201 / 47%);
+                font-size: 20px;
+            }
+
+            >.bottom{
+                padding: 10px;
+                box-shadow: 2px 4px 10px 1px rgb(201 201 201 / 47%);
+                display: flex;
+                min-height: 300px;
+
+                >.img{
+                    flex:1;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 10px;
+
+                    img{
+                            width: 100px;
+                            height: 100px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+                    }
+                
+
+                >.data{
+                    flex:2;
+                    display: flex;
+                    flex-direction: column;
+
+                    form{
+
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 20px;
+
+                        @mixin inputStyle {
+                            border-style: solid;
+                            border-color: transparent transparent black transparent;
+                            border-width: 1px;
+                            padding: 5px;
+                            width: calc(100% - 20px);
+                            background: inherit;
+                            color: inherit;
+
+                            &:focus{
+                                outline:none;
+                            }
+                        }
+
+                        .input_form:first-child{
+                            width: 40%;
+                                label{
+                                    display: flex;
+                                    gap: 20px;
+                                    font-size: 18px;
+                                }
+                                input{
+                                    display:none;
+                                }
+                            
+                        }
+
+                        .input_form:not(:nth-child(1)){
+
+                            width:40%;
+                            .input_name{
+                                display:block;
+                            }
+
+                            input{
+                                @include inputStyle
+                            }
+
+                            
+                        }
+
+
+                        button{
+                            
+                            padding: 5px 80px;
+                            background: cadetblue;
+                            color: #fff;
+                            border: none;
+                            text-transform: capitalize;
+                            margin: auto;
+                            cursor:pointer;
+
+                        }
+
+
+
+
+                    }
+
+                    .submit{
+                        text-align: center;
+                        
+                        button{
+                            background: cadetblue;
+                            color: #fff;
+                            padding: 7px 80px;
+                            font-size: 15px;
+                            text-transform: capitalize;
+                            border: none;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

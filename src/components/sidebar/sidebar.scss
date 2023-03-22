@@ -1,0 +1,112 @@
+.sideBar{
+    border-right: 1px solid lightgray;
+    min-height: 100vh;
+    transition: 0.3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform:translateX(-225px);
+    width:225px;
+    background:inherit;
+    
+    &.expand{
+        transform:translateX(0px)
+    }
+
+    .top{
+        position: relative;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-height: 27px;
+        border-bottom: 1px solid lightgray;
+        .logo{
+            color: cadetblue;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .arrow{
+            color: white;
+            position: absolute;
+            right: -29px;
+            transform: translateY(-50%);
+            top: 50%;
+            padding: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: cadetblue;
+            transition:0.3s;
+        }
+    }
+
+    &.expand .top{
+        .arrow{
+            transform:translateY(-50%) rotate(180deg)
+        }
+    }
+    .center{
+        padding:10px;
+
+        h6{
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 13px;
+        }
+        ul{
+            padding:0;
+            margin: 0;
+
+            li{
+                padding: 5px;
+                list-style: none;
+                color:cadetblue;
+                display:flex;
+                font-size: 13px;
+                align-items: center;
+                transition: 0.3s;
+                cursor: pointer;
+        
+                &:hover{
+                    background: #efefef;
+                    border-right: 3px solid cadetblue;
+                }
+            }
+        }
+
+        .icon{
+            margin-right: 5px;
+            font-size: 20px;
+        }
+    }
+
+    .bottom{
+        padding:10px;
+        display:flex;
+        justify-content: center;
+        gap: 4px;
+
+        .colorOptions{
+            width: 20px;
+            height: 20px;
+            border: 1px solid;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:nth-child(1){
+                background-color:whitesmoke;
+            }
+            &:nth-child(2){
+                background-color:rgb(39, 39, 39);
+            }
+        }
+    }
+
+
+}
+
+
+
+
+

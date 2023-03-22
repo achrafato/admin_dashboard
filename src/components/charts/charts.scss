@@ -1,0 +1,49 @@
+// handle view
+.Charts{
+    /********** handle view ************/
+    .container{
+        margin:auto;
+        padding: 0px 15px;
+    }
+
+    /*Small devices */
+    @media (min-width: 576px){
+    .container{
+        width:540px;
+    }
+    }
+    
+    
+    /*Medium  ---> tablets*/
+    @media (min-width: 768px){
+        .container{
+        width:720px;
+        }
+    }
+    
+    /*DEsktops*/
+    
+    @media (min-width: 992px){
+        .container{
+        width:960px;
+        }
+    }
+    
+    /*Large Screens*/
+    
+    @media (min-width: 1200px){   /*    It mean minimum width value 12000 or above     */
+        .container{
+        width:1140px;
+        }
+    }
+    /********** handle view ************/
+}
+
+.Charts{
+    padding:10px;
+
+    .container{
+        display: flex;
+        gap:20px;
+    }
+}

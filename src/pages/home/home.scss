@@ -1,0 +1,42 @@
+.home{
+
+
+
+    .home_container{
+        transition: 0.3s;
+
+
+        &.expand{
+            margin-left: 225px;
+            padding-left: 20px;
+
+            .nav{
+                .container{
+                    width:900px
+                }
+            }
+
+            .widgets{
+                .container{
+                    width:900px;
+                }
+            }
+
+            .Charts{
+                .container{
+                    width:900px
+                }
+            }
+
+            .tableui{
+                .container{
+                    width:900px
+                }
+            }
+
+
+        }
+
+
+    }
+}

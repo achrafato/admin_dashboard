@@ -1,0 +1,107 @@
+
+// handle view
+.nav{
+        /********** handle view ************/
+        .container{
+            margin:auto;
+            padding: 0px 15px;
+        }
+    
+        /*Small devices */
+        @media (min-width: 576px){
+        .container{
+            width:540px;
+        }
+        }
+        
+        
+        /*Medium  ---> tablets*/
+        @media (min-width: 768px){
+            .container{
+            width:720px;
+            }
+        }
+        
+        /*DEsktops*/
+        
+        @media (min-width: 992px){
+            .container{
+            width:960px;
+            }
+        }
+        
+        /*Large Screens*/
+        
+        @media (min-width: 1200px){   /*    It mean minimum width value 12000 or above     */
+            .container{
+            width:1140px;
+            }
+        }
+        /********** handle view ************/
+}
+
+
+.nav{
+    height: 47px;
+    border-bottom: 1px solid lightgray;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        
+        .searchContainer{
+            flex:4;
+            .search{
+                display: flex;
+                border: 1px solid lightgray;
+                padding: 2px;
+                align-items: center;
+                max-width: 230px;
+    
+                input{
+                    border: none;
+                    font-size: 17px;
+                    padding: 3px;
+                    background: inherit;
+                    color: inherit;
+                }
+                input:focus{
+                    outline: none;
+                }
+                
+                .icon{
+                    font-size: 20px;
+                }
+            }
+        }
+
+
+
+        .nav-menu{
+            
+            flex:3;
+
+            ul{
+                display: flex;
+                align-items: center;
+                list-style: none;
+                justify-content: space-between;
+
+                li{
+                    cursor: pointer;
+                }
+                
+                li:first-child{
+                    display: flex;
+                    gap: 5px;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+
+}

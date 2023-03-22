@@ -1,0 +1,23 @@
+
+
+.list_container{
+
+    
+    &.expand{
+
+        margin-left: 225px;
+        padding-left: 20px;
+
+        .nav{
+            .container{
+                width:900px;
+            }
+        }
+
+        .dataTable{
+            .container{
+                width:900px
+            }
+        }
+    }
+}

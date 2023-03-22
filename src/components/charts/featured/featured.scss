@@ -1,0 +1,68 @@
+.featured{
+    box-shadow: 2px 4px 10px 1px rgb(201 201 201 / 47%);
+    padding: 10px;
+    flex:2;
+
+    .top{
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        margin-bottom: 40px;
+
+        span{
+            font-size: 18px;
+        }
+    }
+
+    .center{
+
+        text-align: center;
+        .progress{
+            width: 100px;
+            height: 100px;
+            margin:auto;
+        }
+
+        .total{
+            margin: 15px 0px;
+        }
+
+        .Total_amount{
+            font-size: 30px;
+        }
+
+        .notice{
+            margin: 20px 0px;
+            font-size: 13px;
+        }
+    }
+
+    .bottom{
+        display: flex;
+        text-align: center;
+        justify-content:space-around;
+
+
+        .target,.last_week,.last_month{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .amount{
+            display:flex;
+
+            &.positive{
+                color:green;
+            }
+            &.negative{
+                color:red;
+            }
+        }
+
+        
+
+        
+    }
+}
